@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>NSI - cour & Exercices</title>
+  <script src="script.js" defer></script>
+</head>
+<body style="background-color: white;" id="bodyID" alt="1">
+
+	<h1>JavaScript Partie 2</h1>
+	<h2>Réponses aux questions</h2>
+	
+	<h3>1) Commande getElementById </h3><div class="inside">
+	<p>
+	<a href="https://www.google.fr/" id="google">Lien vers Google</a>		
+	</p>
+	</div>
+	<h3>2) Paramètres 1</h3><div class="inside">
+	<p>
+		elle sert a recuperé le paramètre href ou ID ou le content de la Balise HTML
+	</p>
+</div>
+	<h3>3) Commande querySelectorAll</h3><div class="inside">
+	<p>
+		<ul>
+			<li>Chocolat</li>
+			<li>Vanille</li>
+			<li>Pistache</li>
+		  </ul>
+	</p>
+</div>
+	<h3>4) Paramètres 2</h3><div class="inside">
+	<p>
+		<button id="button">Next</button>
+		<img id="next" src="image1.jpeg" alt="Ceci est une image"> 
+		cela change l'atribut alt
+	</p>
+</div>
+	<h3>5) Commande style</h3><div class="inside">
+	<p>
+		<p id="texte">Bonjour !</p>
+		elle est supposer changer la couleur de fond
+	</p>
+</div>
+	<h3>6) Méthode addEventListener</h3><div class="inside">
+	<p>
+		<button id="monbtn">Cliquer ici</button>
+	</p>
+</div>
+	<h3>7) Formulaire 1</h3><div class="inside">
+	<p>
+
+		<form> 
+			<label for="name">Nom</label> 
+				<input type="text" id="name" name="name"> 
+			<br><br> 
+			<label for="email">E-mail</label> 
+				<input type="email" id="email" name="email"> 
+			<br><br> 
+			<label for="message">Message</label> 
+				<textarea id="message" name="message"></textarea> 
+			<br><br> 
+			<select id="films" name="films"> 
+			 <option value="Batman">Batman</option> 
+			 <option value="Seigneur-des-anneaux">Le seigneur des anneaux</option> 
+			 <option value="Titanic">Titanic & le vilain glaçon</option> 
+			</select> 
+			<br><br> 
+			<input type="submit" value="Envoyer"> 
+		</form>
+
+
+
+	la balise <strong>&lt;label&gt;</strong> permet d'associe une etiquette a un champ <br>
+	la balise <strong>&lt;input&gt;</strong> permet de crée le champ de saisie <br>
+	la balise <strong>&lt;select&gt;</strong> permet de crée un choix multiple <br>
+	</p>
+</div>
+	<h3>8) Formulaire 2</h3><div class="inside">
+	<p>
+		<input type="checkbox" id="accepter" name="accepter">
+		<label>Préférence de couleur</label> 
+		<input type="radio" id="red" name="couleur" value="red"> 
+		<label>Rouge</label> 
+		<input type="radio" id="blue" name="couleur" value="blue"> 
+		<label>Bleu</label> 
+		<input type="radio" id="green" name="couleur" value="green"> 
+		<label>Vert</label> 
+	</p>
+</div>
+	<h3>9) Les boutons</h3><div class="inside">
+	<p>
+		le bouton et fait pour appler une fonctiin, alors que <strong>&lt;input type="submit"&gt;</strong> et fait pout retournée une fonction
+
+	</p>
+</div>
+	<h3>Exercices</h3><div class="inside">
+	
+	<p id="userName"></p>
+
+	<button onclick="changeBackground()">changer de fond</button>
+	<label for="multi">table de multiplication</label> 
+	<input type="text" id="myText" value="5">
+	<button onclick="table()">Envoyer </button>
+	<p id="enfin"></p>
+</div>
+
+<h3>lien Google</h3><div class="inside">
+<form action="https://www.google.com/search?" target="_blank"> 
+	<label for="search">search</label> 
+		<input type="text" id="search" name="search"> 
+	<br><br> 
+	<input type="submit" value="Envoyer"> 
+</form>
+</div>
+</body>
+</html>
