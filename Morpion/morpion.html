@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le jeu du morpion</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script> 
+</head>
+<body>
+	<div id="hautPage"></div>
+	<div id="accueil">
+        <h1><br>Bienvenue dans le jeu du morpion</h1>
+        <form id="formJoueurs">
+            <label for="joueur1">Nom du joueur 1 :</label>
+            <input type="text" id="joueur1" name="joueur1" style="margin: 10px;" required>
+            <br>
+            <label for="joueur2">Nom du joueur 2 :</label>
+            <input type="text" id="joueur2" name="joueur2" style="margin: 10px;" required>
+            <br>
+            <button type="submit">Commencer la partie</button>
+        </form>
+		<p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+		<p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+		<p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+
+    </div>
+    <div id="regle">
+        <h1>le jeu du morpion</h1>
+        <p>règles du jeu :</p>
+        <p>
+            Deux joueurs s'affrontent sur une grile de 3x3.</br>
+            Chaque joueurs prends tour à tour une case.</br>
+            le premier joueur à aligner trois symboles identiques horizontalement, verticalement ou en diagonalle remporte la partie.</br>
+		</p>
+    </div>
+
+    <div id="Jeu">
+        <h1>JEU :</h1>
+        <div>
+            <button class="case"></button>
+            <button class="case"></button>
+            <button class="case"></button>
+        </div>
+        <div>
+            <button class="case"></button>
+            <button class="case"></button>
+            <button class="case"></button>
+        </div>
+        <div>
+            <button class="case"></button>
+            <button class="case"></button>
+            <button class="case"></button>
+        </div>
+        
+        <div id="StatutJeu"></div>
+		<div id="but"><button id="replay" onclick="restart()">rejouer</button></div>
+    </div>
+	<p><br><br><br></p>
+	<div id="basPage"></div>
+</body>
+</html>
